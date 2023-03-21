@@ -1,0 +1,25 @@
+type: script
+innerHTML: |
+  $(document).on({
+    'show.bs.modal': function () {
+      var zIndex = 1040 + (10 * $('.modal:visible').length);
+      $(this).css('z-index', zIndex);
+      setTimeout(function() {
+        $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1).addClass('modal-stack');
+      }, 0);
+    },
+    'hidden.bs.modal': function() {
+      /**
+       * Add/remove class modal-open from body.
+       */
+      if ($('.modal:visible').length > 0) {
+        setTimeout(function() {
+          $(document.body).addClass('modal-open');
+        }, 0);
+      }else{
+        setTimeout(function() {
+          $(document.body).removeClass('modal-open');
+        }, 0);
+      }
+    }
+  }, '.modal');
