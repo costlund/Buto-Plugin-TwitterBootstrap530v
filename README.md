@@ -83,3 +83,8 @@ Add a colon after.
 ```
 content-colon
 ```
+
+### Changes from version 4
+- Attribute "data-dismiss" changed to "data-bs-dismiss".
+- Attribute "data-toggle" changed to "data-bs-toggle".
+- Attribute "data-target" changed to "data-bs-target".
