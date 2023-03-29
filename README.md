@@ -88,3 +88,4 @@ content-colon
 - Attribute "data-dismiss" changed to "data-bs-dismiss".
 - Attribute "data-toggle" changed to "data-bs-toggle".
 - Attribute "data-target" changed to "data-bs-target".
+- Attribute "badge-(primary,secondary,success,danger,warning,info,light,dark)" changed to "text-bg-(primary,secondary,success,danger,warning,info,light,dark)".
